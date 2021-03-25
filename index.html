@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+	<meta charset="utf=8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Hello Pizza</title>
+</head>
+
+<body>
+	<div id="interface">
+	<header id="cabecalho">
+		<img src="img/logo-helloPizza.png" alt="Logo Hello Pizza">
+		<nav>
+			<ul>
+				<li><a href="#interface">Início</a></li>
+				<li><a href="#sabores">Sabores</a></li>
+				<li><a href="#contato">Contato</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="home">
+			<ul>
+				<li>Qualidade</li>
+				<li>Sabor</li>
+				<li>Praticidade</li>
+				<li>Agilidade</li>
+			</ul>
+		</section>
+		<section id="sabores">
+			<div id="sabores-info">
+			<h1>Sabores</h1>
+			<h2>Conheça os nossos sabores!</h2>
+			</div>
+			<img src="img/sabores-pizzas.png" alt="Sabores de pizza">
+
+			<table id="tabela-sabores">
+				<thead>
+					<tr>
+						<th>Pizzas</th>
+						<th>Queijo e Molho</th>
+						<th>Salada</th>
+						<th>Carne</th>
+						<th>Azeite/Champignon</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Mozzarella</td>
+						<td class="text-positivo" rowspan="6">Sim</td>
+						<td class="text-negativo">Não</td>
+						<td class="text-negativo">Não</td>
+						<td class="text-negativo">Não</td>
+					</tr>
+					<tr>
+						<td>Calabresa</td>
+						<td class="text-negativo">Não</td>
+						<td class="text-positivo">Sim</td>
+						<td class="text-positivo">Sim</td>
+					</tr>
+					<tr>
+						<td>Pepperoni</td>
+						<td class="text-negativo">Não</td>
+						<td class="text-positivo">Sim</td>
+						<td class="text-positivo">Sim</td>
+					</tr>
+					<tr>
+						<td>Maguerita</td>
+						<td class="text-positivo">Sim</td>
+						<td class="text-positivo">Sim</td>
+						<td class="text-positivo">Sim</td>
+					</tr>
+					<tr>
+						<td>Portuguesa</td>
+						<td>Sim</td>
+						<td>Sim</td>
+						<td>Sim</td>
+					</tr>
+					<tr>
+						<td>Alho</td>
+						<td class="text-negativo">Não</td>
+						<td class="text-negativo">Não</td>
+						<td class="text-negativo">Não</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section id="contato">
+			<h1>Contato</h1>
+			<form method="get" action="http://arquivo.devmedia.com.br/projeto/requisicao.php" target="blank" id="formulario-contato">
+				<div>
+					<label>Nome:</label>
+					<input class="limpar" type="text" name="nome" placeholder="Digite aqui seu nome..." required>
+				</div>
+				<div>
+					<label>E-mail:</label>
+					<input class="limpar" type="email" name="email" placeholder="Digite aqui seu e-mail..." required>
+				</div>
+				<div>
+					<label>Mensagem:</label>
+					<textarea class="limpar" name="mensagem" placeholder="Digite aqui sua mensagem..." rows="15" resize="none" required></textarea>
+				</div>
+				<div class="button">
+					<input type="submit" name="bt-enviar"  value="Enviar Mensagem">
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer id="rodape">
+		<img src="img/logo-helloPizza.png" alt="Logo Hello Pizza">
+		<p>Todos os direitos &copy; reservados</p>
+	</footer>
+	</div>
+	<script type="HTML/JAVASCRIPT" src="functions.js"></script>
+</body>
+
+</html>
